@@ -10,7 +10,7 @@
         },
     ];
 
-    const addNewTask  = (newTaskContent) => {
+    const addNewTask = (newTaskContent) => {
         tasks.push({
             content: newTaskContent,
         })
@@ -48,11 +48,11 @@
 
         for (const task of tasks) {
             htmlString += `
-            <li ${task.done ? "style=\"text-decoration: line-through\"" : ""} 
+            <li ${task.done ? "class=\"list__item list__item--done\"" : ""} 
             >
-            <button class="js-done">zrobione?</button>
-            <button class="js-remove">usuń</button>
+                <button class="js-done">zrobione?</button>
                 ${task.content}
+                <button class="js-remove">usuń</button>
             </li>     
             `;
         }
@@ -74,12 +74,12 @@
 
     };
 
-    const init = () =>{ 
+    const init = () => {
         render();
 
         const form = document.querySelector(".js-form");
 
-        form.addEventListener("submit", onFormSubmit );
+        form.addEventListener("submit", onFormSubmit);
     };
 
     init();
