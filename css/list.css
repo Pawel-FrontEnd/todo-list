@@ -1,11 +1,11 @@
 .list__tasks {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     margin: 0;
 }
 
-.list__item {
+.list__tasksItem {
     text-decoration: none;
     list-style-type: none;
 }
@@ -14,9 +14,12 @@
     text-decoration: line-through;
 }
 
-.list_doneButton {
+.list__doneButton {
     background-color: green;
     color: white;
+    border-style: none;
+    height: 25px;
+    width: 25px;
 }
 
 .list__removeButton {
