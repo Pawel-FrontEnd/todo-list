@@ -1,7 +1,8 @@
 .list__tasks {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    justify-content: space-around;
+    /* padding: 10px; */
     margin: 0;
 }
 
