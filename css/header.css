@@ -4,3 +4,8 @@
     margin: 0 auto;
     border-bottom: 2px #eee solid;
 }
+
+.header--mainHeader {
+    background-color: transparent;
+    font-size: bold;
+}
