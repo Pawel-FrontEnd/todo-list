@@ -1,0 +1,25 @@
+.form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+    background-color: white;
+    padding: 20px;
+    margin: 0 0 10px 0;
+}
+
+@media (max-width: 500px) {
+    .form {
+        grid-template-columns: auto;
+    }
+}
+
+.form__newTaskInput {
+    padding: 10px;
+}
+
+.form__newTaskButton {
+    border-style: none;
+    color: white;
+    background-color: teal;
+    padding: 10px;
+}
