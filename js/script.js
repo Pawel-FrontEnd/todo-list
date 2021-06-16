@@ -1,20 +1,16 @@
 {
-    const tasks = [
-        {
-            content: "nagrać lekcję",
-            done: false,
-        },
-        {
-            content: "zjeść pierogi",
-            done: true,
-        },
-    ];
+    const tasks = [];
 
     const addNewTask = (newTaskContent) => {
         tasks.push({
             content: newTaskContent,
         })
         render();
+    }
+
+    const clearInput = (newTask) => {
+        newTask.value = '';
+        newTask.focus();
     }
 
     const removeTask = (taskIndex) => {
@@ -48,12 +44,13 @@
 
         for (const task of tasks) {
             htmlString += `
-            <li ${task.done ? "class=\"list__tasksItem list__item--done\"" : "class=\"list__tasksItem \""}>
+            <li class="list__tasksItem">
                 <button class="js-done list__doneButton">
                 ${task.done ? " &#10004;" : ""}</button>
-                ${task.content}
-                <button class="js-remove list__removeButton">	
-                &#128465;</button>
+
+                <p class=${task.done ? "\"list__text list__tasksItem--done\"" : "list__text"}>${task.content}</p>
+
+                <button class="js-remove list__removeButton">&#128465;</button>
             </li>     
             `;
         }
@@ -64,22 +61,22 @@
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-
-        const newTaskContent = document.querySelector(".js-newTask").value.trim();
+        const newTask = document.querySelector(".js-newTask")
+        const newTaskContent = newTask.value.trim();
         console.log(newTaskContent);
 
         if (newTaskContent === "") {
+            clearInput(newTask);
             return;
         }
-        addNewTask(newTaskContent);
 
+        addNewTask(newTaskContent);
+        clearInput(newTask);
     };
 
     const init = () => {
         render();
-
         const form = document.querySelector(".js-form");
-
         form.addEventListener("submit", onFormSubmit);
     };
 
