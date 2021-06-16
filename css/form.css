@@ -23,3 +23,11 @@
     background-color: teal;
     padding: 10px;
 }
+
+.form__newTaskButton:hover {
+    background-color: hsl(180, 100%, 30%);
+}
+
+.form__newTaskButton:active {
+    background-color: hsl(180, 100%, 35%);
+}
