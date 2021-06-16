@@ -7,7 +7,7 @@
 ## Description
 
 ## Demo:
-Click to preview: [todo - list website](https://pawel-frontend.github.io/currency-converter/)
+Click to preview: [todo - list website](https://pawel-frontend.github.io/todo-list/)
 ## How to use:
 ![Gif demo](images/currency-converter-demo.gif)
 ## Used features:
