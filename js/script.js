@@ -47,7 +47,7 @@
                 ${task.done ? "&#10004;" : ""}</button>
                 <p class="list__text ${task.done ? " list__tasksItem--done" : ""}">${task.content}</p>
                 <button class="js-remove list__removeButton">&#128465;</button>
-            </li>     
+            </li>
             `;
         }
         document.querySelector(".js-tasks").innerHTML = htmlString;
