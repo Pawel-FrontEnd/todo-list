@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="js/script.js"></script>
+    <link href="css/normalise.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
     <link href="css/list.css" rel="stylesheet">
     <title>todo-list</title>
 </head>
+
 <body class="body">
-    <h1 class="mainHeader">Lista zadań</h1>
+    <h1>Lista zadań</h1>
     <h2 class="header">Dodaj nowe zadanie</h2>
-    <form class="js-form">
-        <input class="js-newTask" placeholder="Co jest do zrobienia?">
-        <button>Dodaj zadanie</button>
+    <form class="js-form form">
+        <input autofocus class="js-newTask form__newTaskInput" placeholder="Co jest do zrobienia?">
+        <button class="form__newTaskButton">Dodaj zadanie</button>
     </form>
     <h2 class="header">Lista zadań</h2>
     <ul class="js-tasks list__tasks"></ul>
 </body>
+
 </html>
