@@ -9,7 +9,7 @@ A simple application for creating a handy to-do list. The application is mainly 
 ## Demo:
 Click to preview: [todo - list website](https://pawel-frontend.github.io/todo-list/)
 ## How to use:
-![Gif demo](images/currency-converter-demo.gif)
+![Gif demo](images/todo-list-demo.gif)
 ## Used features:
 - Semantic HTML
 - CSS
