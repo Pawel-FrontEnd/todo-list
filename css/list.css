@@ -22,12 +22,21 @@
 }
 
 .list__doneButton {
-    background-color: green;
+    background-color: #008000;
     color: white;
     border-style: none;
     height: 30px;
     width: 30px;
 }
+
+.list__doneButton:hover {
+    background-color: hsl(120, 100%, 30%);
+}
+
+.list__doneButton:active {
+    background-color: hsl(120, 100%, 35%);
+}
+
 
 .list__removeButton {
     background-color: red;
@@ -35,4 +44,12 @@
     color: white;
     height: 30px;
     width: 30px;
+}
+
+.list__removeButton:hover {
+    background-color: hsl(0, 100%, 55%);
+}
+
+.list__removeButton:active {
+    background-color: hsl(0, 100%, 60%);
 }
