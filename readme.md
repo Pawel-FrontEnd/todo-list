@@ -15,4 +15,6 @@ Click to preview: [todo - list website](https://pawel-frontend.github.io/currenc
 - CSS
 - ES6+ using features(arrows, const, let)
 - BEM naming
+- Media queries
+- Grid
 ## Author: Paweł Dardziński
