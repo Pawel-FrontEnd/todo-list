@@ -1,10 +1,12 @@
 {
-    const tasks = [];
+    let tasks = [];
+    let hideDoneTasks = false;
 
     const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
-        })
+        tasks = [
+            ...tasks,
+            { content: newTaskContent },
+        ]
         render();
     }
 
@@ -55,13 +57,18 @@
     };
 
     const renderButtons = () => {
+    };
+
+    const BindButtonsEvents = () => {
 
     };
 
     const render = () => {
         renderTasks();
+        renderButtons();
         bindRemoveEvents();
         bindToggleDoneEvents();
+        BindButtonsEvents();
     };
 
     const onFormSubmit = (event) => {
