@@ -31,7 +31,16 @@
         ];
         render();
     };
-    
+
+    const toggleHideDoneTasks = () => {
+        hideDoneTasks = !hideDoneTasks;
+        render();
+    };
+
+    const markAllTasksDone = () => {
+
+    };
+
     const bindRemoveEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
         removeButtons.forEach((removeButton, index) => {
@@ -67,7 +76,7 @@
     const renderButtons = () => {
     };
 
-    const BindButtonsEvents = () => {
+    const bindButtonsEvents = () => {
 
     };
 
@@ -76,7 +85,7 @@
         renderButtons();
         bindRemoveEvents();
         bindToggleDoneEvents();
-        BindButtonsEvents();
+        bindButtonsEvents();
     };
 
     const onFormSubmit = (event) => {
