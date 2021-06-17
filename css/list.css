@@ -53,3 +53,18 @@
 .list__removeButton:active {
     background-color: hsl(0, 100%, 60%);
 }
+
+.list__header {
+    background-color: white;
+    padding: 20px;
+    border-bottom: 2px #eee solid;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list__headerTitle {
+    margin: 0;
+    font-size: 20px;
+}
