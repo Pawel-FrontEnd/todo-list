@@ -15,6 +15,7 @@
 
 .form__newTaskInput {
     padding: 10px;
+    border: 2px #eee solid;
 }
 
 .form__newTaskButton {
