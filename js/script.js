@@ -74,6 +74,7 @@
     };
 
     const renderButtons = () => {
+        
     };
 
     const bindButtonsEvents = () => {
@@ -90,15 +91,15 @@
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-        const newTask = document.querySelector(".js-newTask")
-        const newTaskContent = newTask.value.trim();
+        const newTaskInput = document.querySelector(".js-newTask")
+        const newTaskContent = newTaskInput.value.trim();
         console.log(newTaskContent);
         if (newTaskContent === "") {
-            clearInput(newTask);
+            clearInput(newTaskInput);
             return;
         }
         addNewTask(newTaskContent);
-        clearInput(newTask);
+        clearInput(newTaskInput);
     };
 
     const init = () => {
