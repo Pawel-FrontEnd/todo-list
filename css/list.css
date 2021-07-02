@@ -64,7 +64,7 @@
     justify-content: space-between;
 }
 
-.list__headerTitle {
+.section__heading {
     margin: 0;
     font-size: 20px;
 }
