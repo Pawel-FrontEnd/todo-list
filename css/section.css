@@ -1,7 +1,36 @@
-.section__buttonsContainer{
+.section__header {
+    border-bottom: solid 1px hsl(0, 0%, 93%);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 20px;
+}
 
+@media (max-width: 767px){
+    .section__header {
+        grid-template-columns: 1fr;
+    }
+}
+
+.section__buttonsContainer{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .section__button{
-    
+    border: none;
+    background-color: transparent;
+    color: hsl(180, 100%, 25%);
+    margin: 0 0 0 20px;
+    transition: color 0.4s;
+    cursor: pointer;
+}
+
+@media(max-width: 767px) {
+    .section__button {
+        flex-basis: 100%;
+        margin: 10px;
+    }
 }
